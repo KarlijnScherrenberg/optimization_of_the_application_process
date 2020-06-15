@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The sollicitation Experience - Valtech</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
+<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mb-5 pb-5">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="col-lg-10 offset-lg-1">
+          <ul class="progressbar">
+            <li class="done">Algemene gegevens</li>
+            <li class="done">Toevoegen competenties</li>
+            <li class="done">Competentiematch</li>
+            <li class="active">Cv en motivatie</li>
+            <li>Verstuur sollicitatie</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 offset-lg-3">
+          <h1 class="mt-5">Voeg hier je CV en motivatie toe</h1>
+
+          <form name="algemene_informatie" action="sollicitatie_stap5.html" method="">
+            <h3 class="mt-5">CV*</h3>
+            <p>Voeg met behulp van onderstaande knoppen je CV toe. Alleen PDF en Word bestanden zijn toegestaan.</p>
+<!--            <label class="button_primair">Upload-->
+              <input type="file" id="cv_doc" name="cv_doc" value="upload" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+<!--            </label><br>-->
+
+            <h3 class="mt-5">Motivatiebrief</h3>
+            <p>Voeg met behulp van onderstaande knoppen je motivatiebrief toe. Alleen PDF en Word bestanden zijn toegestaan.</p>
+<!--            <label class="button_primair">Upload-->
+            <input type="file" id="motivatie_doc" name="motivatie_doc" value="upload" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+<!--            </label><br>-->
+
+<!--            <label class="mt-5" for="motviatie_job">Waarom ben jij geschikt voor deze baan?*</label><br>-->
+<!--            <textarea id="motviatie_job" name="motviatie_job" placeholder="Typ hier je tekst" rows="6" maxlength="350" ></textarea>-->
+<!--            <div class="float-right" id="the-count_comment" style="">-->
+<!--              <span id="current_comment">0</span>-->
+<!--              <span id="maximum_comment"> / 350</span>-->
+<!--            </div>-->
+
+
+            <script>
+            $('#motviatie_job').keyup(function () {
+            var characterCount = $(this).val().length,
+            current = $('#current_comment'),
+            maximum = $('#maximum_comment'),
+            theCount = $('#the-count_comment');
+            var maxlength = $(this).attr('maxlength');
+            console.log(maxlength);
+            var changeColor = 0.75 * maxlength;
+            current.text(characterCount);
+
+            if (characterCount > changeColor && characterCount < maxlength) {
+            current.css('color', '#B22222');
+            current.css('fontWeight', 'bold');
+            }
+            else if (characterCount >= maxlength) {
+            current.css('color', '#9b2222');
+            current.css('fontWeight', 'bold');
+            }
+            else {
+            var col = maximum.css('color');
+            var fontW = maximum.css('fontWeight');
+            current.css('color', col);
+            current.css('fontWeight', fontW);
+            }
+            });
+            </script>
+
+
+        </div>
+    </div>
+  </div>
+
+    <nav class="navbar fixed-bottom bg-white">
+      <div class="row mx-auto">
+        <a href="sollicitatie_stap3.html" class="button_secundair">Terug</a>
+        <input type="submit" value="Verder" class="button_primair ml-2">
+        </form>
+<!--        <a href="vacature_stap2.html" class="button_primair ml-2">Verder</a>-->
+      </div>
+    </nav>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.slim.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The sollicitation Experience - Valtech</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+
+  <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
+<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mb-5 pb-5">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="col-lg-10 offset-lg-1">
+          <ul class="progressbar">
+            <li class="done">Algemene gegevens</li>
+            <li class="active">Toevoegen competenties</li>
+            <li>Competentiematch</li>
+            <li>Cv en motivatie</li>
+            <li>Verstuur sollicitatie</li>
+          </ul>
+        </div>
+
+
+
+        <h1 class="mt-5 col-lg-6 offset-lg-3">Vul hier je competenties in</h1>
+
+        <div class="col-lg-7 offset-lg-3">
+          <form name="algemene_informatie" action="sollicitatie_competentiematch.html" method="">
+            <div>
+              <label class="mt-3">Kies 3 passende competenties*</label><br>
+              <input type="checkbox" name="competentie" value="klantgericht"> Klantgericht<br>
+              <input type="checkbox" name="competentie" value="samenwerkend"> Samenwerkend<br>
+              <input type="checkbox" name="competentie" value="zelfredzaam"> Zelfredzaam<br>
+              <input type="checkbox" name="competentie" value="analytisch"> Analytisch<br>
+              <input type="checkbox" name="competentie" value="resultaatgericht"> Resultaatgericht<br>
+              <input type="checkbox" name="competentie" value="creatief"> Creatief<br>
+              <input type="checkbox" name="competentie" value="communicatief"> Communicatief<br>
+              <input type="checkbox" name="competentie" value="sociaal"> Sociaal<br>
+              <input type="checkbox" name="competentie" value="verantwoordelijk"> Verantwoordelijk<br>
+            </div>
+
+            <h3 class="mt-5">Wat is jouw kracht binnen een team*</h3>
+            <p>Vorm met behulp van slepen of de pijlen een toepasselijke selectie. Bovenaan de meest en onderaan de minst toepasselijke.</p>
+
+            <div id="sortTrue1" class="list-group">
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Prestatie</h4>
+                    <p class="sortable_text">Het stellen van hoge eisen aan jezelf en omgeving, het hoger leggen van de lat en het niet genoegen nemen met een gemiddelde prestatie</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Inzet</h4>
+                    <p class="sortable_text">Het energiek en enthousiast aanpakken, het verzetten van veel werk en het niet laten beperken tot hetgeen wat gevraagd wordt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Oordeelsvorming</h4>
+                    <p class="sortable_text">Op basis van beschikbare informatie komen tot realistische, onderbouwde en bruikbare conclusies binnen projecten</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Verantwoordelijkheid</h4>
+                    <p class="sortable_text">Het bewust zijn van eigen taken en collega’s binnen een organisatie en dit naar behoren uitvoeren</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Initiatief</h4>
+                    <p class="sortable_text">Het uit eigen beweging ondernemen van acties en doen van voorstellen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-5">Wat is jouw kracht in je werk*</h3>
+            <p>Vorm met behulp van slepen of de pijlen een toepasselijke selectie. Bovenaan de meest en onderaan de minst toepasselijke.</p>
+
+            <div id="sortTrue2" class="list-group">
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Resultaatgericht</h4>
+                    <p class="sortable_text">Het gericht zijn op concretiseren van doelen en het realiseren van resultaten binnen een agile project</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Kwaliteitsbewust</h4>
+                    <p class="sortable_text">Het agile werken met daarbinnen sprints waarbij telkens randvoorwaarden worden gesteld waaraan het product of dienst moet voldoen. En deze ook valideren met de klant/gebruiker</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Ambitie</h4>
+                    <p class="sortable_text">Het stellen van hoge maar haalbare doelen, die jezelf uitdagen en verder ontwikkelen</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Analytisch vermogen </h4>
+                    <p class="sortable_text">Het analyseren van een probleem, achterhalen van de oorzaak met bijbehorende verbanden en het trekken van logische conclusies om een product te ontwikkelen passend bij de gebruiker</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Klantgericht</h4>
+                    <p class="sortable_text">Het onderzoeken van wensen en behoeften de klanten en haar (eind)gebruikers en hiernaar handelen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-5">Wat is voor jou belangrijk om uit het bedrijf te halen*</h3>
+            <p>Vorm met behulp van slepen of de pijlen een toepasselijke selectie. Bovenaan de meest en onderaan de minst toepasselijke.</p>
+
+            <div id="sortTrue3" class="list-group">
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Betrokkenheid </h4>
+                    <p class="sortable_text">Het verbonden voelen met en loyaal zijn aan de organisatie en het werk</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Ontwikkeling</h4>
+                    <p class="sortable_text">Het vergroten van je kennis, verbeteren van vaardigheden en het stellen van nieuwe doelen</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Afwisseling</h4>
+                    <p class="sortable_text">Het vermogen om je aan te passen aan wijzigende omstandigheden en werken binnen variërende werkwijzen om tot het gewenste doel te komen</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Communicatief</h4>
+                    <p class="sortable_text">Het duidelijk en to the point mondeling communiceren naar collega’s en klanten</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="moveup" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-up.png">
+                    <img class="my-handle" style="height: auto; width: 20px" src="../img/grip-lines.png">
+                    <img class="movedown" style="height: auto; width: 25px; margin-left: -2px" src="../img/arrow-down.png">
+                  </div>
+                  <div class="col-lg-11">
+                    <h4>Sociale vaardigheden </h4>
+                    <p class="sortable_text">Het vermogen/de interesse om (nieuwe) sociale contacten aan te gaan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <nav class="navbar fixed-bottom bg-white">
+      <div class="row mx-auto">
+        <a href="sollicitatie_stap2.html" class="button_secundair">Terug</a>
+        <input type="submit" value="Verder" class="button_primair ml-2">
+        </form>
+<!--        <a href="vacature_stap2.html" class="button_primair ml-2">Verder</a>-->
+      </div>
+    </nav>
+
+  <script>
+    $(function(){
+      var max = 3;
+      var checkboxes = $('input[type="checkbox"]');
+
+      checkboxes.change(function(){
+        var current = checkboxes.filter(':checked').length;
+        checkboxes.filter(':not(:checked)').prop('disabled', current >= max);
+      });
+    });
+
+    $(".moveup").on("click", function() {
+      var elem = $(this).closest(".list-group-item");
+      elem.prev().before(elem);
+    });
+
+    $(".movedown").on("click", function() {
+      var elem = $(this).closest(".list-group-item");
+      elem.next().after(elem);
+    });
+
+    Sortable.create(sortTrue1, {
+      group: "sorting",
+      animation: 150,
+      sort: true
+    });
+
+    Sortable.create(sortTrue2, {
+      group: "sorting",
+      animation: 150,
+      sort: true
+    });
+
+    Sortable.create(sortTrue3, {
+      group: "sorting",
+      animation: 150,
+      sort: true
+    });
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.slim.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+      <script>
+        Sortable.create(sortTrue1, {
+          group: "sorting",
+          animation: 150,
+          sort: true
+        });
+      </script>
