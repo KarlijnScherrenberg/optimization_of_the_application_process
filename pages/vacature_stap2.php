@@ -32,28 +32,28 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
-    <!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
-    <!--        <span class="navbar-toggler-icon"></span>-->
-    <!--      </button>-->
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
-        </li>
-      </ul>
+    <div class="container">
+        <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <img style="height: 20px" width="auto" src="../img/menu_stripes.png">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <!-- Page Content -->
@@ -75,15 +75,15 @@
         <form name="competentie_filters" action="vacature_overzicht.php?expertise=<?php echo $expertise; ?>" method="post">
           <label class="mt-5">Kies 3 passende competenties*</label><br>
           <div class="checkbox-group options">
-            <input type="checkbox" name="competentie" value="klantgericht" required> Klantgericht<br>
-            <input type="checkbox" name="competentie" value="samenwerkend" required> Samenwerkend<br>
-            <input type="checkbox" name="competentie" value="zelfredzaam" required> Zelfredzaam<br>
-            <input type="checkbox" name="competentie" value="analytisch" required> Analytisch<br>
-            <input type="checkbox" name="competentie" value="resultaatgericht" required> Resultaatgericht<br>
-            <input type="checkbox" name="competentie" value="creatief" required> Creatief<br>
-            <input type="checkbox" name="competentie" value="communicatief" required> Communicatief<br>
-            <input type="checkbox" name="competentie" value="sociaal" required> Sociaal<br>
-            <input type="checkbox" name="competentie" value="verantwoordelijk" required> Verantwoordelijk<br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="klantgericht" required> Klantgericht</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="samenwerkend" required> Samenwerkend</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="zelfredzaam" required> Zelfredzaam</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="analytisch" required> Analytisch</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="resultaatgericht" required> Resultaatgericht</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="creatief" required> Creatief</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="communicatief" required> Communicatief</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="sociaal" required> Sociaal</label><br>
+              <label class="label_style"><input type="checkbox" name="competentie" value="verantwoordelijk" required> Verantwoordelijk</label><br>
           </div>
 
 

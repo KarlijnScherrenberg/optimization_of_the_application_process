@@ -23,40 +23,46 @@
     $content = array(
         'cloud_engineer' => array(
             'expertise' => 'Cloud Engineer',
-            'url' => 'cloud_engineer',
+            'url' => 'cloud_engineer'
         ), 'data_analyse' => array(
             'expertise' => 'Data & Analyse',
-            'url' => 'data_analyse',
+            'url' => 'data_analyse'
         ), 'design' => array(
             'expertise' => 'Design',
-            'url' => 'design',
-        ), 'development' => array(
-            'expertise' => 'Development',
-            'url' => 'development',
+            'url' => 'design'
+        ), 'backend_development' => array(
+            'expertise' => 'Back-end Development',
+            'url' => 'backend_development'
+        ), 'frontend_development' => array(
+            'expertise' => 'Front-end Development',
+            'url' => 'frontend_development'
+        ), 'software_development' => array(
+            'expertise' => 'Software Development',
+            'url' => 'software_development'
         ), 'digital_marketing' => array(
             'expertise' => 'Digital Marketing',
-            'url' => 'digital_marketing',
+            'url' => 'digital_marketing'
         ), 'finance' => array(
             'expertise' => 'Finance',
-            'url' => 'finance',
+            'url' => 'finance'
         ), 'hr_education' => array(
-            'expertise' => 'Hr & Academy',
-            'url' => 'hr_education',
+            'expertise' => 'Hr & Education',
+            'url' => 'hr_education'
         ), 'recruitment' => array(
             'expertise' => 'Recruitment',
-            'url' => 'recruitment',
+            'url' => 'recruitment'
         ), 'it' => array(
             'expertise' => 'IT',
-            'url' => 'it',
+            'url' => 'it'
         ), 'project_management' => array(
             'expertise' => 'Project Management',
-            'url' => 'project_management',
+            'url' => 'project_management'
         ), 'strategie' => array(
             'expertise' => 'Strategie',
-            'url' => 'strategie',
+            'url' => 'strategie'
         ), 'sales_account' => array(
             'expertise' => 'Sales & Account',
-            'url' => 'sales_account',
+            'url' => 'sales_account'
         )
     );
 
@@ -64,31 +70,31 @@
 
     ?>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
-<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--      </button>-->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <img style="height: 20px" width="auto" src="../img/menu_stripes.png">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
   <!-- Page Content -->
   <div class="container mb-5 pb-5">
@@ -113,7 +119,9 @@
                   <option value="cloud_engineer">Cloud Engineer</option>
                   <option value="data_analyse">Data & Analyse</option>
                   <option value="design">Design</option>
-                  <option value="development">Development</option>
+                  <option value="development">Back-end Development</option>
+                  <option value="development">Front-end Development</option>
+                  <option value="development">Software Development</option>
                   <option value="digital_marketing">Digital Marketing</option>
                   <option value="finance">Finance</option>
                   <option value="hr_education">Hr & Education</option>
@@ -125,42 +133,26 @@
               </select>
 
 
-<!--            <input type="text" id="expertises" name="expertises" required value="--><?php //echo $page_content['expertise']; ?><!--">-->
             <p class="mt-2">Aan de hand van je interesse hebben wij deze expertise geselecteerd</p>
 
-            <h2 class="mt-5">Reisafstand</h2>
-            <label class="mt-3" for="postcode">Postcode</label><br>
-            <input type="text" id="postcode" name="postcode">
-
-            <label class="mt-3">Voorkeur kilometers</label><br>
-            <input type="radio" name="kilometer" value="15km"> Minder dan 15 kilometer<br>
-            <input type="radio" name="kilometer" value="25km"> Tot 25 kilometer<br>
-            <input type="radio" name="kilometer" value="50km"> Tot 50 kilometer<br>
-            <input type="radio" name="kilometer" value="geenkm"> Geen voorkeur<br>
-
-
-            <label class="mt-5">Ervaringniveau</label><br>
-            <input type="radio" name="ervaringniveau" value="Junior 0 - 2 jaar"> Junior 0 - 2 jaar<br>
-            <input type="radio" name="ervaringniveau" value="Medior 2 -5 jaar"> Medior 2 - 5 jaar<br>
-            <input type="radio" name="ervaringniveau" value="Senior 5+ jaar"> Senior 5+ jaar<br>
-
-            <label class="mt-5">Werktijden</label><br>
-            <input type="radio" name="werktijden" value="Fulltime, 40 uur"> Fulltime, 40 uur<br>
-            <input type="radio" name="werktijden" value="Parttime, 36 uur"> Parttime, 36 uur<br>
-            <input type="radio" name="werktijden" value="Alle werktijden"> Alle werktijden<br>
-
-            <label class="mt-5">Salaris</label><br>
-            <p>Bruto salaris verwachting op basis van 40 uur</p>
+              <label class="mt-5">Voorkeur kantoor(en)</label><br>
               <div class="checkbox-group options">
-                  <input type="checkbox" name="salaris" value="&#8364;2000 - &#8364;2500" > &#8364;2000 - &#8364;2500<br>
-                  <input type="checkbox" name="salaris" value="&#8364;2000 - &#8364;2500" > &#8364;2000 - &#8364;2500<br>
-                  <input type="checkbox" name="salaris" value="&#8364;3000 - &#8364;5000" > &#8364;3000 - &#8364;5000<br>
-                  <input type="checkbox" name="salaris" value="&#8364;5000 - hoger" > &#8364;5000 - hoger<br>
+                  <label class="label_style"><input type="checkbox" name="salaris" value="Amersfoort" > Amersfoort</label><br>
+                  <label class="label_style"><input type="checkbox" name="salaris" value="Amsterdam" > Amsterdam</label><br>
+                  <label class="label_style"><input type="checkbox" name="salaris" value="Eindhoven" > Eindhoven</label><br>
+                  <label class="label_style"><input type="checkbox" name="salaris" value="Utrecht" > Utrecht</label><br>
+                  <label class="label_style"><input type="checkbox" name="salaris" value="Geen voorkeur" > Geen voorkeur</label><br>
               </div>
 
+            <label class="mt-5">Ervaringniveau</label><br>
+              <label class="label_style"><input type="radio" name="ervaringniveau" value="Junior 0 - 2 jaar"> Junior 0 - 2 jaar</label><br>
+              <label class="label_style"><input type="radio" name="ervaringniveau" value="Medior 2 -5 jaar"> Medior 2 - 5 jaar</label><br>
+              <label class="label_style"><input type="radio" name="ervaringniveau" value="Senior 5+ jaar"> Senior 5+ jaar</label><br>
 
-
-
+            <label class="mt-5">Werktijden</label><br>
+              <label class="label_style"><input type="radio" name="werktijden" value="Fulltime, 40 uur"> Fulltime, 40 uur</label><br>
+              <label class="label_style"><input type="radio" name="werktijden" value="Parttime, 36 uur"> Parttime, 36 uur</label><br>
+              <label class="label_style"><input type="radio" name="werktijden" value="Alle werktijden"> Alle werktijden</label><br>
 
         </div>
     </div>
@@ -171,7 +163,6 @@
         <a href="vacature_overzicht_basic.php?expertise=<?php echo $page_content['url']; ?>" class="button_secundair">Terug</a>
         <input type="submit" value="Verder" class="button_primair ml-2">
         </form>
-<!--        <a href="vacature_stap2.html" class="button_primair ml-2">Verder</a>-->
       </div>
     </nav>
 

@@ -392,7 +392,7 @@ textarea:focus {
 
 .masthead {
     height: 20vh;
-    min-height: 400px;
+    min-height: 500px;
     background-color: rgba(237, 237, 237, 0.5);
     background-size: cover;
     background-position: center;
@@ -498,5 +498,12 @@ ul {
 .job_link:hover {
     color: #0088bf;
     margin-left: 10px;
+}
+
+.label_style {
+    font-family: 'Helvetica Neue Regular', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #4a4a4a;
 }
 

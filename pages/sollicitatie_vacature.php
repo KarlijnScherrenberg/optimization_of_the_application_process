@@ -22,42 +22,40 @@
 $expertise = $_GET["expertise"];
 $ervaring = $_GET["ervaring"];
 $werktijden = $_GET["werktijden"];
-$salaris = $_GET["salaris"];
 $competentie = $_GET["competentie"];
+
 
 ?>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
-    <!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
-    <!--        <span class="navbar-toggler-icon"></span>-->
-    <!--      </button>-->
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
-        </li>
-      </ul>
+    <div class="container">
+        <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <img style="height: 20px" width="auto" src="../img/menu_stripes.png">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 
 <header class="masthead">
   <div class="container h-100">
-    <a href="vacature_overzicht.php?expertise=<?php echo $expertise; ?>&ervaring=<?php echo $ervaring?>&werktijden=<?php echo $werktijden?>&salaris=<?php echo $salaris?>" class="button_secundair">Terug</a>
-
     <div class="row h-100 align-items-center">
       <div class="col-12 text-center">
         <h1><?php echo $expertise; ?> Functie</h1>
@@ -85,7 +83,6 @@ $competentie = $_GET["competentie"];
             <li>Nederland</li>
             <li><?php echo $werktijden?></li>
             <li><?php echo $ervaring?></li>
-            <li><?php echo $salaris?></li>
             <li>Afdeling <?php echo $expertise; ?></li>
           </ul>
 
@@ -111,111 +108,91 @@ $competentie = $_GET["competentie"];
           </ul>
       </div>
 
-      <div class="mt-5">
-        <h2>Wat bieden wij jou</h2>
-
-        <div class="row text-center mt-5">
-          <div class="col-lg-2">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_wat_bieden_wij-01.png">
+        <!-- Block wat bieden wij jou -->
+        <div class="mt-5 pt-4">
+            <h1>Wat bieden wij jou</h1>
+            <div class="row text-center mt-5 col-lg-8">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_wat_bieden_wij-01.png">
+                    </div>
+                    <p class="mt-4 pt-2">Breed klanten pakket</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_wat_bieden_wij-02.png">
+                    </div>
+                    <p class="mt-4 pt-2">Gezelligheid</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_wat_bieden_wij-03.png">
+                    </div>
+                    <p class="mt-4 pt-2">Ontwikkel mogelijkheden</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_wat_bieden_wij-04.png">
+                    </div>
+                    <p class="mt-4 pt-2">Aantrekkelijk salaris</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_wat_bieden_wij-05.png">
+                    </div>
+                    <p class="mt-4 pt-2">Flexibiliteit</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_wat_bieden_wij-06.png">
+                    </div>
+                    <p class="mt-4 pt-2">Uitdaging</p>
+                </div>
             </div>
-            <p class="mt-4 pt-2">Breed klanten pakket</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_wat_bieden_wij-02.png">
-            </div>
-            <p class="mt-4 pt-2">Gezelligheid</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_wat_bieden_wij-03.png">
-            </div>
-            <p class="mt-4 pt-2">Ontwikkel mogelijkheden</p>
-          </div>
         </div>
 
-        <div class="row text-center mt-3">
-          <div class="col-lg-2">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_wat_bieden_wij-04.png">
+        <!-- Block ons sollicitatieproces -->
+        <div class="mt-5 col-lg-8">
+            <h1>Ons sollicitatieproces</h1>
+            <div class="row text-center mt-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_sollicitatie-06.png">
+                    </div>
+                    <p class="mt-4 pt-2">1. Solliciteren</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_sollicitatie-01.png">
+                    </div>
+                    <p class="mt-4 pt-2">2. Contact</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_sollicitatie-02.png">
+                    </div>
+                    <p class="mt-4 pt-2">3. Kennismakings gesprek</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_sollicitatie-03.png">
+                    </div>
+                    <p class="mt-4 pt-2">4. Vervolg gesprek</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_sollicitatie-04.png">
+                    </div>
+                    <p class="mt-4 pt-2">5. Aanbod</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="mt-4 col-sm-6 offset-sm-3 col-8 offset-2">
+                        <img class="img-fluid" src="../img/icons_sollicitatie-05.png">
+                    </div>
+                    <p class="mt-4 pt-2">6. Starten</p>
+                </div>
             </div>
-            <p class="mt-4 pt-2">Aantrekkelijk salaris</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_wat_bieden_wij-05.png">
-            </div>
-            <p class="mt-4 pt-2">Flexibiliteit</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_wat_bieden_wij-06.png">
-            </div>
-            <p class="mt-4 pt-2">Uitdaging</p>
-          </div>
         </div>
-
-
-
-      </div>
-
-      <div class="mt-5">
-        <h2>Ons sollicitatieproces</h2>
-
-        <div class="row text-center mt-5">
-          <div class="col-lg-2">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_sollicitatie-06.png">
-            </div>
-            <p class="mt-4 pt-2">1. Solliciteren</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_sollicitatie-01.png">
-            </div>
-            <p class="mt-4 pt-2">2. Contact</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_sollicitatie-02.png">
-            </div>
-            <p class="mt-4 pt-2">3. Kennismakings gesprek</p>
-          </div>
-        </div>
-
-        <div class="row text-center mt-3">
-          <div class="col-lg-2">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_sollicitatie-03.png">
-            </div>
-            <p class="mt-4 pt-2">4. Vervolg gesprek</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_sollicitatie-04.png">
-            </div>
-            <p class="mt-4 pt-2">5. Aanbod</p>
-          </div>
-
-          <div class="col-lg-2 offset-lg-1">
-            <div class="mt-4 col-lg-8 offset-lg-2">
-              <img class="img-fluid" src="../img/icons_sollicitatie-05.png">
-            </div>
-            <p class="mt-4 pt-2">6. Starten</p>
-          </div>
-        </div>
-
-
-
-      </div>
     </div>
   </div>
 </div>
@@ -234,14 +211,6 @@ $competentie = $_GET["competentie"];
     </div>
   </div>
 </footer>
-
-<!--  <nav class="navbar fixed-bottom bg-white">-->
-<!--    <div class="row mx-auto">-->
-<!--      <a href="vacature_overzicht.html" class="button_secundair">Terug</a>-->
-<!--      <a href="sollicitatie_stap1.html" class="button_primair ml-2">Verder</a>-->
-<!--    </div>-->
-<!--  </nav>-->
-
 
 
   <!-- Bootstrap core JavaScript -->
