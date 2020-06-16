@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -15,12 +14,12 @@
   <link href="../css/style.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 
 <body>
 
 <?php
+    //Get data from form
     $page = $_GET['expertise'];
 
     $expertise = $_POST['expertiseOption'];
@@ -61,7 +60,8 @@
   <div class="row">
     <div class="col-lg-12">
 
-      <div class="col-lg-8 offset-lg-2">
+        <!-- Timeline -->
+        <div class="col-lg-8 offset-lg-2">
         <ul class="progressbar_vacature">
           <li class="done">Praktische filters</li>
           <li class="active">Competentie filters</li>
@@ -73,40 +73,40 @@
         <h1 class="mt-5">Vul hier je competenties in</h1>
 
         <form name="competentie_filters" action="vacature_overzicht.php?expertise=<?php echo $expertise; ?>" method="post">
-          <label class="mt-5">Kies 3 passende competenties*</label><br>
-          <div class="checkbox-group options">
-              <label class="label_style"><input type="checkbox" name="competentie" value="klantgericht" required> Klantgericht</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="samenwerkend" required> Samenwerkend</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="zelfredzaam" required> Zelfredzaam</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="analytisch" required> Analytisch</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="resultaatgericht" required> Resultaatgericht</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="creatief" required> Creatief</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="communicatief" required> Communicatief</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="sociaal" required> Sociaal</label><br>
-              <label class="label_style"><input type="checkbox" name="competentie" value="verantwoordelijk" required> Verantwoordelijk</label><br>
-          </div>
-
+            <!-- Filter Competenties -->
+            <label class="mt-5">Kies 3 passende competenties*</label><br>
+              <div class="checkbox-group options">
+                  <label class="label_style"><input type="checkbox" name="competentie" value="klantgericht" required> Klantgericht</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="samenwerkend" required> Samenwerkend</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="zelfredzaam" required> Zelfredzaam</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="analytisch" required> Analytisch</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="resultaatgericht" required> Resultaatgericht</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="creatief" required> Creatief</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="communicatief" required> Communicatief</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="sociaal" required> Sociaal</label><br>
+                  <label class="label_style"><input type="checkbox" name="competentie" value="verantwoordelijk" required> Verantwoordelijk</label><br>
+              </div>
 
             <input type="hidden" id="expertises" name="expertises" value="<?php echo $expertise; ?>">
             <input type="hidden" id="ervaringniveau" name="ervaringniveau" value="<?php echo $ervaring; ?>">
             <input type="hidden" id="werktijden" name="werktijden" value="<?php echo $werktijden; ?>">
             <input type="hidden" id="salaris" name="salaris" value="<?php echo $salaris; ?>">
-
-
       </div>
     </div>
   </div>
+</div>
 
-  <nav class="navbar fixed-bottom bg-white">
+<!-- Navbar bottom -->
+<nav class="navbar fixed-bottom bg-white">
     <div class="row mx-auto">
-      <a href="vacature_stap1.php?expertise=<?php echo $expertise; ?>" class="button_secundair">Terug</a>
-      <input type="submit" value="Verder" class="button_primair ml-2">
-      </form>
+        <a href="vacature_stap1.php?expertise=<?php echo $expertise; ?>" class="button_secundair">Terug</a>
+        <input type="submit" value="Verder" class="button_primair ml-2">
+        </form>
     </div>
-  </nav>
+</nav>
 
-
-  <script>
+<!-- Script check maximum 3 checkboxes checked -->
+<script>
     $(function(){
       var requiredCheckboxes = $('.options :checkbox[required]');
       requiredCheckboxes.change(function(){
@@ -127,11 +127,11 @@
         checkboxes.filter(':not(:checked)').prop('disabled', current >= max);
       });
     });
-  </script>
+</script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.slim.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

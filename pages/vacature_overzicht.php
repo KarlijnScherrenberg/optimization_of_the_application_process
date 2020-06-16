@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -15,20 +14,20 @@
   <link href="../css/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-
 </head>
 
 <body>
-
-
 <?php
+//Get data from url
 $page = $_GET['expertise'];
 
+//get data from prefilters
 $expertise = $_POST["expertises"];
 $ervaring = $_POST["ervaringniveau"];
 $werktijden = $_POST["werktijden"];
 $competentie = $_POST["competentie"];
 
+//content arrays
 $content = array(
     'cloud_engineer' => array(
         'expertise' => 'Cloud Engineer',
@@ -75,6 +74,7 @@ $content = array(
     )
 );
 
+//koppel expertise aan juiste content array
 $page_content = $content[$expertise];
 
 ?>
@@ -105,6 +105,7 @@ $page_content = $content[$expertise];
     </div>
 </nav>
 
+<!-- Vacature header -->
 <header class="masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
@@ -112,8 +113,10 @@ $page_content = $content[$expertise];
         <h1 class="text-center">Vacatures</h1>
         <p class="lead">Vind hier je vacature</p>
 
+          <!-- Filters & search bar -->
           <form name="filters_vacature" action="" method="">
               <div class="row">
+                  <!-- Search bar -->
                   <div class="input-group col-lg-6">
                       <input class="form-control border-right-0" value="Zoek hier">
                       <span class="input-group-append bg-white">
@@ -121,13 +124,16 @@ $page_content = $content[$expertise];
                       </span>
                   </div>
 
+                  <!-- Filter toggle -->
                   <div class="col-lg-6">
                       <a href="#" class="filter_button" onclick="toggle_visibility('filters');">Filter je resultaten</a>
                   </div>
               </div>
 
+              <!-- Filters -->
               <div style="display: none" id="filters">
                   <div class="row">
+                      <!-- Filter offices -->
                       <div class="col-lg-4">
                           <label class="mt-1" for="expertises">Kantoor</label><br>
                           <select name="kantoorOption" class="custom-select">
@@ -139,6 +145,7 @@ $page_content = $content[$expertise];
                           </select>
                       </div>
 
+                      <!-- Filter expertise -->
                       <div class="col-lg-4">
                           <label class="mt-1" for="expertises">Expertise</label><br>
                           <select name="expertiseOption" class="custom-select">
@@ -161,6 +168,7 @@ $page_content = $content[$expertise];
                           </select>
                       </div>
 
+                      <!-- Filter Werkervaring -->
                       <div class="col-lg-4">
                           <label class="mt-1" for="expertises">Werkervaring</label><br>
                           <select name="werkervaringOption" class="custom-select">
@@ -171,6 +179,7 @@ $page_content = $content[$expertise];
                           </select>
                       </div>
 
+                      <!-- Filter werktijden -->
                       <div class="col-lg-4">
                           <label class="mt-1" for="expertises">Werktijden</label><br>
                           <select name="werkervaringOption" class="custom-select">
@@ -181,6 +190,7 @@ $page_content = $content[$expertise];
                           </select>
                       </div>
 
+                      <!-- Filter competenties -->
                       <div class="col-lg-4">
                           <label class="mt-1" for="expertises">Competenties</label><br>
                           <select name="werkervaringOption" class="custom-select">
@@ -200,9 +210,9 @@ $page_content = $content[$expertise];
               </div>
           </form>
 
+          <!-- CTA to vacature prefilters -->
           <p class="pt-3">Benieuwd naar vacatures die bij jou passen? Vul de filters in en krijg een relevant overzicht</p>
           <a href="vacature_stap1.php?expertise=<?php echo $page_content['url']; ?>" class="button_primair">Start hier</a>
-
       </div>
     </div>
   </div>
@@ -214,14 +224,14 @@ $page_content = $content[$expertise];
   <div class="row">
     <div class="col-lg-11 offset-lg-1">
 
-      <div class="row mt-5">
+        <!-- Filter labels -->
+        <div class="row mt-5">
         <p class="filter_label">Nederland X</p>
         <p class="ml-3 filter_label"><?php echo $page_content['expertise']; ?> X</p>
         <p class="ml-3 filter_label"><?php echo $ervaring; ?> X</p>
         <p class="ml-3 filter_label"><?php echo $werktijden; ?> X</p>
         <p class="ml-3 filter_label"><?php echo $competentie; ?> X</p>
       </div>
-
 
       <h1 class="mt-5">Openstaande vacatures</h1>
 
@@ -358,13 +368,7 @@ $page_content = $content[$expertise];
   </div>
 </div>
 
-<!--  <nav class="navbar fixed-bottom bg-white">-->
-<!--    <div class="row mx-auto">-->
-<!--      <a href="vacature_stap2.html" class="button_secundair">Terug</a>-->
-<!--      <a href="sollicitatie_vacature.html" class="button_primair ml-2">Verder</a>-->
-<!--    </div>-->
-<!--  </nav>-->
-
+<!-- Footer contact -->
 <footer class="footer mt-5">
   <div class="container h-100">
 
@@ -379,10 +383,12 @@ $page_content = $content[$expertise];
   </div>
 </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.slim.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script toggle filters -->
 <script>
     function toggle_visibility(id) {
         var e = document.getElementById(id);
@@ -392,7 +398,6 @@ $page_content = $content[$expertise];
             e.style.display = 'none';
     }
 </script>
-
 
 </body>
 

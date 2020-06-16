@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -15,17 +14,16 @@
   <link href="../css/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-
 <?php
+//Get expertise from url
 $page = $_GET['expertise'];
 
+//content arrays
 $content = array(
     'cloud_engineer' => array(
         'expertise' => 'Cloud Engineer',
@@ -72,6 +70,7 @@ $content = array(
     )
 );
 
+//koppel expertise met array
 $page_content = $content[$page];
 
 ?>
@@ -101,8 +100,7 @@ $page_content = $content[$page];
     </div>
 </nav>
 
-
-
+<!-- Header vacatureoverzicht met filters -->
 <header class="masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
@@ -110,23 +108,28 @@ $page_content = $content[$page];
         <h1 class="text-center">Vacatures</h1>
         <p class="lead">Vind hier je vacature</p>
 
-        <form name="filters_vacature" action="" method="">
+          <!-- Search bar & filter toggle -->
+          <form name="filters_vacature" action="" method="">
             <div class="row">
+                <!-- Search bar -->
                 <div class="input-group col-lg-6">
                     <input class="form-control border-right-0" value="Zoek hier">
                     <span class="input-group-append bg-white">
-              <button class="btn border border-left-0" type="button"><i class="icon fa fa-search"></i></button>
-            </span>
+                        <button class="btn border border-left-0" type="button"><i class="icon fa fa-search"></i></button>
+                    </span>
                 </div>
 
+                <!-- Filter toggle -->
                 <div class="col-lg-6">
                     <a href="#" class="filter_button" onclick="toggle_visibility('filters');">Filter je resultaten</a>
                 </div>
 
             </div>
 
-            <div style="display: none" id="filters">
+              <!-- Filters -->
+              <div style="display: none" id="filters">
                 <div class="row">
+                    <!-- Filter office -->
                     <div class="col-lg-4">
                         <label class="mt-1" for="expertises">Kantoor</label><br>
                         <select name="kantoorOption" class="custom-select">
@@ -138,6 +141,7 @@ $page_content = $content[$page];
                         </select>
                     </div>
 
+                    <!-- Filter expertise -->
                     <div class="col-lg-4">
                         <label class="mt-1" for="expertises">Expertise</label><br>
                         <select name="expertiseOption" class="custom-select">
@@ -160,6 +164,7 @@ $page_content = $content[$page];
                         </select>
                     </div>
 
+                    <!-- Filter werkervaring -->
                     <div class="col-lg-4">
                         <label class="mt-1" for="expertises">Werkervaring</label><br>
                         <select name="werkervaringOption" class="custom-select">
@@ -170,6 +175,7 @@ $page_content = $content[$page];
                         </select>
                     </div>
 
+                    <!-- Filter werktijden -->
                     <div class="col-lg-4">
                         <label class="mt-1" for="expertises">Werktijden</label><br>
                         <select name="werkervaringOption" class="custom-select">
@@ -179,6 +185,7 @@ $page_content = $content[$page];
                         </select>
                     </div>
 
+                    <!-- Filter competenties -->
                     <div class="col-lg-4">
                         <label class="mt-1" for="expertises">Competenties</label><br>
                         <select name="werkervaringOption" class="custom-select">
@@ -198,6 +205,7 @@ $page_content = $content[$page];
             </div>
         </form>
 
+          <!-- CTA to prefilters -->
           <p class="pt-3">Benieuwd naar vacatures die bij jou passen? Vul de filters in en krijg een relevant overzicht</p>
           <a href="vacature_stap1.php?expertise=<?php echo $page_content['url']; ?>" class="button_primair">Start hier</a>
       </div>
@@ -352,25 +360,6 @@ $page_content = $content[$page];
   </div>
 </div>
 
-<div id="myModal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Vacature Prefilters</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Maak gebruik van onze prefilters om tot een relevant vacature overzicht te komen.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="button_secundair" data-dismiss="modal">Sluit</button>
-                <a href="vacature_stap1.php?expertise=<?php echo $page_content['url']; ?>" type="button" class="button_primair">Naar Filters</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 <footer class="footer mt-5">
   <div class="container h-100">
@@ -390,6 +379,7 @@ $page_content = $content[$page];
   <script src="../vendor/jquery/jquery.slim.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!-- Script for toggle filter -->
 <script>
     function toggle_visibility(id) {
         var e = document.getElementById(id);

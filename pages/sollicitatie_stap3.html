@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -16,58 +15,56 @@
 
   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
 </head>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
-<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--      </button>-->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
-          </li>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html"><img style="height: 30px" width="auto" src="../img/valtech-logo-black.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <img style="height: 20px" width="auto" src="../img/menu_stripes.png">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/search_icon.png"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/globe_icon.png"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/NL_icon.png"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img style="height: 20px" width="auto" src="../img/menu_stripes.png"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container mb-5 pb-5">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <!-- Time line -->
+      <div class="col-md-10 offset-md-1 col-12">
+        <ul class="progressbar">
+          <li class="done">Algemene gegevens</li>
+          <li class="active">Toevoegen competenties</li>
+          <li>Competentiematch</li>
+          <li>Cv en motivatie</li>
+          <li>Verstuur sollicitatie</li>
         </ul>
       </div>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="container mb-5 pb-5">
-    <div class="row">
-      <div class="col-lg-12">
-
-        <div class="col-lg-10 offset-lg-1">
-          <ul class="progressbar">
-            <li class="done">Algemene gegevens</li>
-            <li class="active">Toevoegen competenties</li>
-            <li>Competentiematch</li>
-            <li>Cv en motivatie</li>
-            <li>Verstuur sollicitatie</li>
-          </ul>
-        </div>
-
-
-
-        <h1 class="mt-5 col-lg-6 offset-lg-3">Vul hier je competenties in</h1>
-
+      <h1 class="mt-5 col-lg-6 offset-lg-3">Vul hier je competenties in</h1>
         <div class="col-lg-7 offset-lg-3">
           <form name="algemene_informatie" action="sollicitatie_competentiematch.html" method="">
             <div>
+              <!-- Algemene competenties -->
               <label class="mt-3">Kies 3 passende competenties*</label><br>
               <label class="label_style"><input type="checkbox" name="competentie" value="klantgericht"> Klantgericht</label><br>
               <label class="label_style"><input type="checkbox" name="competentie" value="samenwerkend"> Samenwerkend</label><br>
@@ -80,9 +77,11 @@
               <label class="label_style"><input type="checkbox" name="competentie" value="verantwoordelijk"> Verantwoordelijk</label><br>
             </div>
 
+            <!-- Competenties binnen een team -->
             <h3 class="mt-5">Wat is jouw kracht binnen een team*</h3>
             <p>Vorm met behulp van slepen of de pijlen een toepasselijke selectie. Bovenaan de meest en onderaan de minst toepasselijke.</p>
 
+            <!-- Sortable list -->
             <div id="sortTrue1" class="list-group">
               <div class="list-group-item">
                 <div class="row">
@@ -155,9 +154,11 @@
               </div>
             </div>
 
+            <!-- Competenties in je werk -->
             <h3 class="mt-5">Wat is jouw kracht in je werk*</h3>
             <p>Vorm met behulp van slepen of de pijlen een toepasselijke selectie. Bovenaan de meest en onderaan de minst toepasselijke.</p>
 
+            <!-- Sortable list -->
             <div id="sortTrue2" class="list-group">
               <div class="list-group-item">
                 <div class="row">
@@ -230,9 +231,11 @@
               </div>
             </div>
 
+            <!-- Competenties in het bedrijf -->
             <h3 class="mt-5">Wat is voor jou belangrijk om uit het bedrijf te halen*</h3>
             <p>Vorm met behulp van slepen of de pijlen een toepasselijke selectie. Bovenaan de meest en onderaan de minst toepasselijke.</p>
 
+            <!-- Sortable list -->
             <div id="sortTrue3" class="list-group">
               <div class="list-group-item">
                 <div class="row">
@@ -305,76 +308,66 @@
               </div>
             </div>
 
-
-
-
-            </div>
+          </form>
         </div>
     </div>
   </div>
+</div>
 
+<!-- Navbar bottom -->
+<nav class="navbar fixed-bottom bg-white">
+  <div class="row mx-auto">
+    <a href="sollicitatie_stap2.html" class="button_secundair">Terug</a>
+    <input type="submit" value="Verder" class="button_primair ml-2">
+  </div>
+</nav>
 
-    <nav class="navbar fixed-bottom bg-white">
-      <div class="row mx-auto">
-        <a href="sollicitatie_stap2.html" class="button_secundair">Terug</a>
-        <input type="submit" value="Verder" class="button_primair ml-2">
-        </form>
-<!--        <a href="vacature_stap2.html" class="button_primair ml-2">Verder</a>-->
-      </div>
-    </nav>
+<script>
+// script check maximum of 3 checkboxes
+$(function(){
+    var max = 3;
+    var checkboxes = $('input[type="checkbox"]');
 
-  <script>
-    $(function(){
-      var max = 3;
-      var checkboxes = $('input[type="checkbox"]');
-
-      checkboxes.change(function(){
-        var current = checkboxes.filter(':checked').length;
-        checkboxes.filter(':not(:checked)').prop('disabled', current >= max);
-      });
+    checkboxes.change(function(){
+      var current = checkboxes.filter(':checked').length;
+      checkboxes.filter(':not(:checked)').prop('disabled', current >= max);
     });
+  });
 
-    $(".moveup").on("click", function() {
-      var elem = $(this).closest(".list-group-item");
-      elem.prev().before(elem);
-    });
+  $(".moveup").on("click", function() {
+    var elem = $(this).closest(".list-group-item");
+    elem.prev().before(elem);
+  });
 
-    $(".movedown").on("click", function() {
-      var elem = $(this).closest(".list-group-item");
-      elem.next().after(elem);
-    });
+  $(".movedown").on("click", function() {
+    var elem = $(this).closest(".list-group-item");
+    elem.next().after(elem);
+  });
 
-    Sortable.create(sortTrue1, {
-      group: "sorting",
-      animation: 150,
-      sort: true
-    });
+//script for sortable list
+Sortable.create(sortTrue1, {
+    group: "sorting",
+    animation: 150,
+    sort: true
+  });
 
-    Sortable.create(sortTrue2, {
-      group: "sorting",
-      animation: 150,
-      sort: true
-    });
+  Sortable.create(sortTrue2, {
+    group: "sorting",
+    animation: 150,
+    sort: true
+  });
 
-    Sortable.create(sortTrue3, {
-      group: "sorting",
-      animation: 150,
-      sort: true
-    });
-  </script>
+  Sortable.create(sortTrue3, {
+    group: "sorting",
+    animation: 150,
+    sort: true
+  });
+</script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.slim.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.slim.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
-
-      <script>
-        Sortable.create(sortTrue1, {
-          group: "sorting",
-          animation: 150,
-          sort: true
-        });
-      </script>

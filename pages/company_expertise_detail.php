@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -13,14 +12,15 @@
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
-
 </head>
 
 
 <body>
     <?php
+//    Get expertersie from url
     $page = $_GET['expertise'];
 
+//    Content arrays
     $content = array(
         'cloud_engineer' => array(
             'expertise' => 'Cloud Engineer',
@@ -123,9 +123,10 @@
         )
     );
 
+    //Koppel expertise van url aan juiste array
     $page_content = $content[$page];
-
     ?>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
         <div class="container">
@@ -314,8 +315,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.slim.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 
 </html>
